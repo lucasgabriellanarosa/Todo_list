@@ -1,10 +1,16 @@
 import { useSaveTodos } from "./hooks/useSaveTodos"
+import styles from './App.module.css'
+import { Header } from "./components/Header"
 
 function App() {
   useSaveTodos()
 
   return (
-    <h1>Hello</h1>
+    <div className={styles.container}>
+      <header>
+        <Header />
+      </header>
+    </div>
   )
 }
 
